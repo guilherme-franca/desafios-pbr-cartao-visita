@@ -1,0 +1,90 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Trebuchet MS", "Verdana";
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+}
+	
+
+#card {
+	border: 1px solid #EBEBEB;
+	width: 540px;
+	height: 200px;
+	display: flex;
+	align-self: center;
+	padding: 10px;
+}
+
+#card > div {
+	flex: 1 100%;
+}
+
+#card > div:first-child {
+	max-width: 50%;
+}
+
+#card #left {
+	display: flex;
+	flex-direction: column;
+	flex: 2;
+	align-items: stretch;
+	text-align: center;
+	font-size: 3em;
+}
+
+#card #left > div {
+	border-right: 7px solid;
+	flex: 1 100%;
+    align-self: stretch;
+}
+
+#card #left #top { 
+	border-color: red;
+	position: relative;
+}
+
+#card #left #top p { 
+	align-self: flex-end;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	color: red
+}
+
+#card #left #bottom {
+	border-color: #000;
+}
+
+/* --- --- */
+
+#card #right {
+	flex: 1;
+	text-align: right;
+	position: relative;
+}
+
+#card #right > p { display: block; }
+
+#card #right .city {
+	margin-top: 20px;
+}
+
+#card #right .contact {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+#card #right .contact > p {
+	padding: 2px 0;
+}
